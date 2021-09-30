@@ -5,26 +5,21 @@
 * Browsers: last 4 version
 */
 
-/*  -ms-grid-row problem fixed by adding grid-row without "-ms-"
-    PROBLEM: the copy-pasting from CSS to PostCSS and to autoprefixer messed up the code in some places:
-    1. :root content was empty. The colours were erased.
-    2. project list item 3 and 6 were overlapped and I had to fix it manually. 
-*/
-
 :root { 
+  /* the exercise tells me to replace all colors, but does it make sense to replace colors like white and black? 
+  or the red color for a visited website? I am never going to repeat the color red apart from this purpose*/
   --primary-color: #0E57DC;
   --secondary-color: #EAD084; 
 }
 
-
 a {
-  color: var(--primary-color);
+  color: #0E57DC;
 }
 
 
 *{
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }  
 
 body {
@@ -53,7 +48,7 @@ h3 {
 }  
 
 a{
-  color: var(--primary-color) ;
+  color: lighten primary-color, 20%;
 }
 
 a:visited {
@@ -61,25 +56,31 @@ a:visited {
   color: red;
 }
 
-a:hover, a:focus {
+a:hover {
   /*no underlining when hovering over a link*/
   text-decoration: none;
-  color:  var(--primary-color);
+  color:  #0E57DC;
+}
+
+a:focus {
+  /*no underlining when hovering over a link*/
+  text-decoration: none;
+  color:  #0E57DC;
 }
 
 a:active {
-  color: lighten primary-color, 20%;
+  color: undefined;
 
 }
 
-button {
+.button {
 
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
+  background-color: #0E57DC;
   text-decoration: none;
   /*adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
@@ -88,7 +89,7 @@ button {
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
 }
 
-button:hover, button :focus {
+.button:hover, button :focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
@@ -108,8 +109,8 @@ button:hover, button :focus {
   float: left;
   width: 240px;
   height: 240px;
-  margin-right: 40px;
-  border-radius: 50%;
+  margin-right: 70px;
+  border-radius: 30%;
 }
 
 .page-footer {
@@ -167,21 +168,15 @@ button:hover, button :focus {
   margin-left: 15px;
 }
 
-.contact-body {
-  text-align: center;
-}
-
 .project-list {
   display: -ms-grid;
-  display: ms-grid;
+  display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 20px 1fr 20px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
-
-/* problems start from here */
 
 .project-list > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -193,73 +188,72 @@ button:hover, button :focus {
 .project-list > *:nth-child(2) {
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 .project-list > *:nth-child(3) {
   -ms-grid-row: 1;
   grid-row: 1;
-  -ms-grid-column: 3;
-  grid-column: 3;
+  -ms-grid-column: 5;
+  grid-column: 5;
 }
 
 .project-list > *:nth-child(4) {
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
   -ms-grid-column: 1;
   grid-column: 1;
 }
 
 .project-list > *:nth-child(5) {
-  -ms-grid-row: 2;
-  grid-row: 2;
-  -ms-grid-column: 2;
-  grid-column: 2;
+  -ms-grid-row: 3;
+  grid-row: 3;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 .project-list > *:nth-child(6) {
   -ms-grid-row: 3;
   grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-column: 5;
+  grid-column: 5;
 }
 
 .project-list > *:nth-child(7) {
-  -ms-grid-row: 3;
-  grid-row: 3;
+  -ms-grid-row: 5;
+  grid-row: 5;
   -ms-grid-column: 1;
   grid-column: 1;
 }
 
 .project-list > *:nth-child(8) {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 3;
+  grid-column: 3;
 }
 
 .project-list > *:nth-child(9) {
-  -ms-grid-row: 3;
-  grid-row: 3;
-  -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-row: 5;
+  grid-row: 5;
+  -ms-grid-column: 5;
+  grid-column: 5;
 }
 
 .project-list_item {
-  background-color: var(--secondary-color);
-  padding: 10px;
-  margin: 5px;
+  background-color: #EAD084;
+  width: auto;
+  min-height: auto;
   display: inline-block;
 }
 
 .project-list_item:last-child {
   -ms-grid-column: 3;
-  grid-column: 3;
-  -ms-grid-row: 2;
+  grid-column: 3 / 3;
+  -ms-grid-row: 1;
   -ms-grid-row-span: 2;
-  grid-row: 2 / 3;
-
+  grid-row: 1 / 3;
 }
 
 /* the following overwrites the grid settings above. Media queries
@@ -269,12 +263,13 @@ adapt CSS rules for different devices */
   .project-list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 
 @media all and (min-width: 500px) and (max-width:750px) {
   .project-list {
-    -ms-grid-columns: 1fr 20px 1fr;
+    -ms-grid-columns: 1fr 10px 1fr;
     grid-template-columns: 1fr 1fr;
   }
   
@@ -284,31 +279,46 @@ adapt CSS rules for different devices */
   .project-list {
     grid-gap: 10px;
   }
-
   .project-list_item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
-
-  h1 {
+  .h1 {
     font-size: 22px;
   }
 }
 
 /* The words in the button are red and not white, don't know how to fix */
-.button, button {
+.button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: var(--primary-color);
+  background-color: #0E57DC;
   color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.2s;
-  -o-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+button {
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+  background-color: #0E57DC;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
   -webkit-transition-property: opacity;
   -o-transition-property: opacity;
   transition-property: opacity;
@@ -324,7 +334,10 @@ button:focus,
 
 .about-body {
   text-align: center;
-  
+}
+
+.contact-body {
+  text-align: center;
 }
 
 .hobby-list {
@@ -420,4 +433,4 @@ button:focus,
           animation-direction: alternate;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-}
+          
