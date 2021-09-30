@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
         
     <head>
@@ -7,25 +8,29 @@
         <link rel="icon" href="Img/Monica_icon.png">
         <!-- viewport is the user's visible area of a web page-->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="CSS/normalize.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="./CSS/style.production.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.production.css">
     </head>
+
+    
 
     <body>
         <header class="page-header">
 
-            <img src="./Img/Monica-logo.png" alt= "logo" class="page-header_item" class="Monica-logo">
+            <img src="./Img/Monica-logo.png" alt= "logo" class="Monica-logo">
         
-            <nav class="page-header_item navigation-list"> 
+            <nav class="page-header_item navigation-list" role="menubar"> 
                 <ul>
                     <li>
-                        <a href="index.html" alt= "Home" role="menuitem" class="navigation-list_item navigation-list_item--active"> Home </a>
+                        <!-- HTML checker says the following alt element should not be allowed at this point -->
+                        <a href="Index.html" alt= "Home" role="menuitem" class="navigation-list_item navigation-list_item--active"> Home </a>
                     </li>
                     
                     <li role="presentation">
-                        <a href="about.html" role="menuitem" alt= "About" class="navigation-list_item" > About-me </a>     
+                        <a href="About.html" role="menuitem" alt= "About" class="navigation-list_item" > About-me </a>     
                     </li>
 
                     <li>
@@ -33,7 +38,7 @@
                     </li>
         
                     <li>
-                        <a href="contact.html" alt= "Contact" class="navigation-list_item"> Contact </a>
+                        <a href="Contact.html" alt= "Contact" class="navigation-list_item"> Contact </a>
                     </li>
                 </ul>    
             </nav>
@@ -41,30 +46,27 @@
     
 
         <div class="profile">
-            <img src="Img/Monica portrait_icon.jpeg" alt= "Image of me" class="profile_portrait">
+            <img src="./Img/Monica portrait_icon.jpeg" alt= "Image of me" class="profile_portrait">
             <h1> Hi Everyone! </h1>
             <p> My name is Monica and I am a <span>web</span> developer from Italy. I believe that re-inventing oneself and keep learning is the key to a fulfilling life. 
                 I am excited to set on a new journey in my professional life 
             </p>
             <a href="#"> Check out some of my code </a>
-            <br>
-            <a href="#">Default Link</a>
-            <button type="button">Default Button</button>
-            <br>
-            <button class= "button_secondary">Secondary Button </button>
         </div>
         
         <footer class="page-footer">
             <p>Find me on </p>
             <div class="social-media">
-                <img src="Img/insta_icon.png" alt="Instagram" width="30px" height="30px"> 
-                <img src="Img/face_icon.png" alt="Facebook" width="30px" height="30px">
+                <!--HTML checker says 30px is a bad value for width and height-->
+                <img src="img/insta_icon.png" alt="Instagram" width="30px" height="30px"> 
+                <img src="img/face_icon.png" alt="Facebook" width="30px" height="30px">
             </div>
             
         </footer> 
 
     </body>
 
-    <script src="js/tota11y.min.js"></script>
+    <!-- HTML checker says the following is a stray start tag-->
+    <script src="js/tota11y.min.js"> </script>
 </html>
 
