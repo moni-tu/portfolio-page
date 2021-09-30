@@ -188,7 +188,7 @@ adapt CSS rules for different devices */
 
 @media all and (min-width: 500px) and (max-width:750px) {
   .project-list {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   
 }
