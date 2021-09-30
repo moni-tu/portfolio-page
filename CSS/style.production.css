@@ -167,6 +167,10 @@ button:hover, button :focus {
   margin-left: 15px;
 }
 
+.contact-body {
+  text-align: center;
+}
+
 .project-list {
   display: -ms-grid;
   display: ms-grid;
