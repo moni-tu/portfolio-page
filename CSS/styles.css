@@ -183,12 +183,13 @@ adapt CSS rules for different devices */
 @media all and (max-width: 500px) {
   .project-list {
     grid-template-columns: 1fr;
+    grid-gap: 10px;
   }
 }
 
 @media all and (min-width: 500px) and (max-width:750px) {
   .project-list {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   
 }
@@ -197,13 +198,11 @@ adapt CSS rules for different devices */
   .project-list {
     grid-gap: 10px;
   }
-
   .project-list_item:last-child {
     grid-column: auto/auto;
     grid-row: auto/auto;
   }
-
-  h1 {
+  .h1 {
     font-size: 22px;
   }
 }
