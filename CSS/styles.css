@@ -169,8 +169,6 @@ a:active {
   background-color: var(--secondary-color);
   width: auto;
   min-height: auto;
-  padding: 10px;
-  margin: 10px;
   display: inline-block;
 }
 
