@@ -117,6 +117,7 @@ a:active {
 .page-footer {
   clear: both;
   text-align: center;
+  align-items: stretch;
   display: flex;
   flex-direction: column;
 }
