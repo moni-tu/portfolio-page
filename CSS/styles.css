@@ -213,7 +213,7 @@ adapt CSS rules for different devices */
   display: inline-block;
   font-family: inherit;
   background-color: var(--primary-color);
-  color: white;
+  color: black;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
