@@ -111,13 +111,12 @@ a:active {
   width: 240px;
   height: 240px;
   margin-right: 70px;
-  border-radius: 70%;
+  border-radius: 50%;
 }
 
 .page-footer {
   clear: both;
   text-align: center;
-  align-items: stretch;
   display: flex;
   flex-direction: column;
 }
