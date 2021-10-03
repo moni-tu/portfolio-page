@@ -87,7 +87,7 @@ a:active {
   transition-property: opacity;
 }
 
-.button:hover, button:focus, button:visited{
+.button:hover, button:focus, button:visited {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
