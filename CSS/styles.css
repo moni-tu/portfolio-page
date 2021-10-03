@@ -53,7 +53,7 @@ a {
   color: var(--primary-color);
 }
 
-a:hover {
+a:visited {
   color: red;
 }
 
