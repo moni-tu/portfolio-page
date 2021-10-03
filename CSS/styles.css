@@ -53,14 +53,6 @@ a {
   color: var(--primary-color);
 }
 
-a:hover{
-  color:red;
-}
-
-a:active{
-  color: var(--secondary-color);
-}
-
 .github-anchor {
   color: var(--primary-color);
 }
@@ -183,6 +175,18 @@ a:active{
   width: auto;
   min-height: auto;
   display: inline-block;
+}
+
+.project-list_item--githublink {
+  color: var(--primary-color);
+}
+
+.project-list_item--githublink:hover{
+  color:red;
+}
+
+.project-list_item--githublink:active{
+  color: var(--secondary-color);
 }
 
 /* the following overwrites the grid settings above. Media queries
