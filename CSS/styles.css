@@ -61,6 +61,10 @@ a {
   color:red;
 }
 
+.github-anchor:active {
+  color: var(--secondary-color);
+}
+
 .button {
 
   /* overwrites browser defaults and resets the border */
