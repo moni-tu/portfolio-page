@@ -49,10 +49,6 @@ h3 {
   text-decoration: underline;
 }  
 
-a {
-  color: var(--primary-color);
-}
-
 
 .github-anchor {
   color: var(--primary-color);
@@ -92,11 +88,6 @@ a {
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
   color: var(--secondary-color);
-}
-
-
-.navigation-list_item {
-  color: var(--primary-color);
 }
 
 .profile_portrait {
