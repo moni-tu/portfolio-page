@@ -60,7 +60,7 @@ a{
 
 a:visited {
   /* visited link*/
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 a:hover, a:focus {
