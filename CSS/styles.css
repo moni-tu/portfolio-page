@@ -64,13 +64,11 @@ a:visited {
 }
 
 a:hover, a:focus {
-  /*no underlining when hovering over a link*/
-  text-decoration: none;
-  color:  var(--primary-color);
+  color:  var(--seondary-color);
 }
 
 a:active {
-  color: red;
+  text-decoration: underline;
 
 }
 
@@ -96,11 +94,16 @@ a:active {
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+  color: black;
 }
 
 .button_secondary {
   color: white;
   background-color: blue;
+}
+
+.navigation-list_item {
+  color: var(--primary-color);
 }
 
 .navigation-list_item--active {
