@@ -105,7 +105,7 @@ a:active {
   color: var(--primary-color);
 }
 
-.navigation-list_item:active {
+.navigation-list_item--active {
   text-decoration: none;
   color: red;
 }
