@@ -106,7 +106,7 @@ a:active {
   color: var(--primary-color);
 }
 
-.navigation-list_item--active {
+.navigation-list_item:active {
   text-decoration: none;
   color: red;
 }
@@ -241,7 +241,7 @@ button:focus,
 .button:hover,
 .button:focus {
   cursor: pointer;
-  opacity: 0.9;
+  opacity: 0.8;
   color: white;
 }
 
