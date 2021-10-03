@@ -49,11 +49,11 @@ h3 {
   text-decoration: underline;
 }  
 
-a{
+a {
   color: var(--primary-color);
 }
 
-a:hover{
+a:hover {
   color: red;
 }
 
