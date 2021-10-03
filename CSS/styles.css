@@ -142,6 +142,11 @@ h3 {
   margin-left: 15px;
 }
 
+.navigation-list_item:visited {
+  color: black;
+
+}
+
 .navigation-list_item:hover{
   color:red;
 }
