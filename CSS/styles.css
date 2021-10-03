@@ -57,6 +57,14 @@ a:visited {
   color: red;
 }
 
+.github-anchor {
+  color: var(--primary-color);
+}
+
+.github-anchor:hover {
+  color:red;
+}
+
 .button {
 
   /* overwrites browser defaults and resets the border */
