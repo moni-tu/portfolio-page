@@ -53,21 +53,6 @@ a{
   color: var(--primary-color);
 }
 
-a:visited {
-  /* visited link*/
-  color: var(--primary-color);
-  text-decoration: underline;
-}
-
-a:hover, a:focus {
-  color:  red;
-}
-
-a:active {
-  color: red;
-
-}
-
 .button {
 
   /* overwrites browser defaults and resets the border */
