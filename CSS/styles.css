@@ -227,7 +227,7 @@ adapt CSS rules for different devices */
   display: inline-block;
   font-family: inherit;
   background-color: var(--primary-color);
-  color: black;
+  color: white;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -242,6 +242,7 @@ button:focus,
 .button:focus {
   cursor: pointer;
   opacity: 0.9;
+  color: white;
 }
 
 .about-body {
