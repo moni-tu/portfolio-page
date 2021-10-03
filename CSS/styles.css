@@ -99,19 +99,6 @@ a {
   color: var(--primary-color);
 }
 
-.navigation-list_item:active {
-  text-decoration: none;
-  color: var(--secondary-color);
-}
-
-.navigation-list_item:hover{
-  color: red;
-}
-
-.navigation-list_item:visited {
-  color: var(--secondary-color);
-}
-
 .profile_portrait {
   float: left;
   width: 240px;
