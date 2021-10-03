@@ -109,7 +109,7 @@ a:active {
   color: var(--secondary-color);
 }
 
-.navigation-list_item:hover, .navigation-list_item:focus {
+.navigation-list_item:hover{
   color: red;
 }
 
