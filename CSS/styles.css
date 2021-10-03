@@ -111,6 +111,10 @@ a:active {
   color: red;
 }
 
+.navigation-list_item:hover{
+  color: red;
+}
+
 .navigation-list_item:visited {
   color: var(--primary-color);
   text-decoration: underline;
