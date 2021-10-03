@@ -114,7 +114,7 @@ a:active {
 }
 
 .navigation-list_item:visited {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .profile_portrait {
