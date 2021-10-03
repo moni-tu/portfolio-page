@@ -55,7 +55,7 @@ a{
 
 a:visited {
   /* visited link*/
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 a:hover, a:focus {
@@ -93,6 +93,10 @@ a:active {
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
   color: white;
+}
+
+.button:active{
+  color: red;
 }
 
 
