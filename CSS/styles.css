@@ -53,6 +53,10 @@ a{
   color: var(--primary-color);
 }
 
+a:hover{
+  color: red;
+}
+
 .button {
 
   /* overwrites browser defaults and resets the border */
