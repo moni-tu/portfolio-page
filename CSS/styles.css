@@ -78,6 +78,7 @@ a:active {
   border: none;
   /* takes the font from the outer container */
   font-family: inherit;
+  display: inline-block;
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: var(--primary-color);
   color: white;
@@ -87,6 +88,8 @@ a:active {
   border-radius: 3px;
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition-duration: 0.2s;
+  transition-property: opacity;
 }
 
 .button:hover, button :focus {
@@ -97,10 +100,6 @@ a:active {
   color: white;
 }
 
-.button_secondary {
-  color: white;
-  background-color: blue;
-}
 
 .navigation-list_item {
   color: var(--primary-color);
@@ -219,30 +218,6 @@ adapt CSS rules for different devices */
   .h1 {
     font-size: 22px;
   }
-}
-
-/* The words in the button are red and not white, don't know how to fix */
-.button, button {
-  border: none;
-  display: inline-block;
-  font-family: inherit;
-  background-color: var(--primary-color);
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition-duration: 0.2s;
-  transition-property: opacity;
-}
-
-button:hover,
-button:focus,
-.button:hover,
-.button:focus {
-  cursor: pointer;
-  opacity: 0.8;
-  color: white;
 }
 
 .about-body {
