@@ -55,7 +55,8 @@ a{
 
 a:visited {
   /* visited link*/
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 a:hover, a:focus {
@@ -87,16 +88,12 @@ a:active {
   transition-property: opacity;
 }
 
-.button:hover, button:focus, button:visited {
+.button:hover, button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
-  color: white;
-}
-
-.button:active{
-  color: red;
+  color: var(--secondary-color);
 }
 
 
