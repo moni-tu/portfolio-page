@@ -64,11 +64,11 @@ a:visited {
 }
 
 a:hover, a:focus {
-  color:  var(--seondary-color);
+  color:  red;
 }
 
 a:active {
-  text-decoration: underline;
+  color: red;
 
 }
 
