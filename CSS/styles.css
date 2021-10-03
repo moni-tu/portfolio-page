@@ -142,6 +142,10 @@ h3 {
   margin-left: 15px;
 }
 
+.navigation-list_item:hover{
+  color:red;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
