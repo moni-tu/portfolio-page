@@ -103,7 +103,6 @@ a:active {
 .navigation-list_item--active {
   text-decoration: none;
   color: var(--secondary-color);
-  color: red;
 }
 
 .navigation-list_item:hover, .navigation-list_item:focus {
@@ -112,7 +111,6 @@ a:active {
 
 .navigation-list_item:visited {
   color: var(--primary-color);
-  text-decoration: underline;
 }
 
 .profile_portrait {
