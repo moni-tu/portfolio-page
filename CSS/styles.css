@@ -53,6 +53,14 @@ a {
   color: var(--primary-color);
 }
 
+.a:hover {
+  color:red;
+}
+
+.a:active {
+  color: var(--secondary-color); 
+}
+
 .github-anchor {
   color: var(--primary-color);
 }
